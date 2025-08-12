@@ -37,6 +37,18 @@ namespace CollectionsMasterConsoleUI
             NumberPrinter(numbers);
             Console.WriteLine("-------------------");
 
+            // This is reverse using built-in method
+            Array.Reverse(numbers); 
+            Console.WriteLine("All Numbers Reversed (Built-in):"); 
+            NumberPrinter(numbers); 
+            Console.WriteLine("-------------------"); 
+
+            // This is reverse back using custom method
+            ReverseArray(numbers); 
+            Console.WriteLine("All Numbers Reversed (Custom):"); 
+            NumberPrinter(numbers);
+            Console.WriteLine("-------------------"); 
+
             //TODO: Reverse the contents of the array.
             //Do this 2 different ways
             /*  1) First way, using a custom method => Hint: Array._____(); 
@@ -46,11 +58,10 @@ namespace CollectionsMasterConsoleUI
 
             //Array.Reverse(numbers);
 
-            Console.WriteLine("All Numbers Reversed:");
-
-            Console.WriteLine("---------REVERSE CUSTOM------------");
-
-            Console.WriteLine("-------------------");
+            Array.Reverse(numbers);
+Console.WriteLine("All Numbers Reversed (Built-in):");
+NumberPrinter(numbers);
+Console.WriteLine("-------------------");
 
             //TODO: Create a method that will set numbers that are a multiple of 3 to zero then print to the console all numbers
             Console.WriteLine("Multiple of three = 0: ");
