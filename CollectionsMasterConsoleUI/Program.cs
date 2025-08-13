@@ -57,15 +57,13 @@ namespace CollectionsMasterConsoleUI
             */
 
             //Array.Reverse(numbers);
-
-            Array.Reverse(numbers);
-Console.WriteLine("All Numbers Reversed (Built-in):");
-NumberPrinter(numbers);
-Console.WriteLine("-------------------");
-
+            //This is already done above - thanks. 
+       
             //TODO: Create a method that will set numbers that are a multiple of 3 to zero then print to the console all numbers
             Console.WriteLine("Multiple of three = 0: ");
             ThreeKiller(numbers);
+            NumberPrinter(numbers);
+
 
             Console.WriteLine("-------------------");
 
@@ -135,7 +133,8 @@ Console.WriteLine("-------------------");
             //TODO: Create a method that will remove all odd numbers from the list then print results
             Console.WriteLine("Evens Only!!");
             OddKiller(numberslist);
-            
+            NumberPrinter(numberslist);
+
             Console.WriteLine("------------------");
 
             //TODO: Sort the list then print results
@@ -156,15 +155,7 @@ Console.WriteLine("-------------------");
             #endregion
         }
 
-        private static void NumberPrinter(object numbersList)
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void NumberChecker(object searchNumber)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         private static void ThreeKiller(int[] numbers)
         {
@@ -175,8 +166,9 @@ Console.WriteLine("-------------------");
                     numbers[i] = 0;
 
                 }
-                NumberPrinter(numbers);
+               
             }
+            NumberPrinter(numbers);
         }
 
         private static void OddKiller(List<int> numberList)
@@ -185,7 +177,7 @@ Console.WriteLine("-------------------");
             {
                 if (numberList[i] % 2 != 0)
                 {
-                    numberList.Remove(numberList[1]);
+                    numberList.RemoveAt(i);
                 }
 
             }
@@ -210,7 +202,7 @@ Console.WriteLine("-------------------");
         private static void Populater(List<int> numberList)
         {
             Random rng = new Random();
-            while(numberList.Count <= 50)
+            while(numberList.Count < 50)
             {
                 numberList.Add(rng.Next(0, 51));
 
@@ -239,11 +231,13 @@ Console.WriteLine("-------------------");
                 int temp = array[start];
                 array[start] = array[end];
                 array[end] = temp;
+
+                start++;
+                end--;
             }
 
             //Move the values from the indexes towards eachother
-            start++;
-            end--;
+            
    
         }
 
