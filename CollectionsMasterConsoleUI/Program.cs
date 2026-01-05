@@ -129,7 +129,7 @@ namespace CollectionsMasterConsoleUI
             //TODO: Create a method that will remove all odd numbers from the list then print results
             Console.WriteLine("Evens Only!!");
             OddKiller(numberslist);
-            NumberPrinter(numberslist);
+          
 
             Console.WriteLine("------------------");
 
