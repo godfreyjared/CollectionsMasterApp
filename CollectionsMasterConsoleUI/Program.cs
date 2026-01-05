@@ -114,11 +114,7 @@ namespace CollectionsMasterConsoleUI
            
             
             Console.WriteLine("-------------------");
-            // Replace the following incorrect line:
-            NumberChecker(numberslist,searchNumber);
-
-            // With the corrected line:
-            NumberChecker(numberslist, searchNumber);
+       
             Console.WriteLine("All Numbers:");
             //UNCOMMENT this method to print out your numbers from arrays or lists
             NumberPrinter(numberslist);
