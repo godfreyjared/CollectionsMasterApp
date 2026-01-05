@@ -118,11 +118,6 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("All Numbers:");
             //UNCOMMENT this method to print out your numbers from arrays or lists
             NumberPrinter(numberslist);
-            // Replace the incorrect line:
-            NumberPrinter(numberslist);
-
-            // With the corrected line:
-            NumberPrinter(numberslist);
             Console.WriteLine("-------------------");
 
 
