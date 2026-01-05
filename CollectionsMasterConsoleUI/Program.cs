@@ -202,7 +202,7 @@ namespace CollectionsMasterConsoleUI
         private static void Populater(List<int> numberList)
         {
             Random rng = new Random();
-            while(numberList.Count < 50)
+            while(numberList.Count <= 50)
             {
                 numberList.Add(rng.Next(0, 51));
 
