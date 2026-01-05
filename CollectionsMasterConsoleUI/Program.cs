@@ -62,7 +62,7 @@ namespace CollectionsMasterConsoleUI
             //TODO: Create a method that will set numbers that are a multiple of 3 to zero then print to the console all numbers
             Console.WriteLine("Multiple of three = 0: ");
             ThreeKiller(numbers);
-            NumberPrinter(numbers);
+            
 
 
             Console.WriteLine("-------------------");
